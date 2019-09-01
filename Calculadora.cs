@@ -4,19 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace Calculadora
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Consola.WriteLine("Escolha uma das quatro operações");
+            Console.WriteLine("Digite 1 para soma");
+            int opcao = int.Parse(Console.ReadLine());
+
             Console.WriteLine("Digite o primeiro numero");
             int n1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o segundo numero");
             int n2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("digite 1 para soma: ");
-            int opcao = int.Parse(Console.ReadLine());
 
             switch (opcao)
             {
@@ -35,6 +37,7 @@ namespace ConsoleApp2
                 default:
                     break;
             }
+            Console.ReadKey();
         }
         public static int Soma(int n1, int n2)
         {
