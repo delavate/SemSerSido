@@ -10,9 +10,9 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
-            Consola.WriteLine("Escolha uma das quatro operações");
+            Console.WriteLine("Escolha uma das quatro operações");
             Console.WriteLine("Digite 1 para soma Ou 2 para subtração");
-            Consola.WriteLine("Ou 3 para Multiplica Ou 4 para dividir");
+            Console.WriteLine("Ou 3 para Multiplica Ou 4 para dividir");
             int opcao = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Digite o primeiro numero");
